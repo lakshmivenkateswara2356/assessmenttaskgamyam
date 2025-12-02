@@ -1,16 +1,19 @@
 import React, { useState, useContext } from "react";
 import EditProductModal from "./Edditdetails";
 import { ProductContext } from "../context/Productslist";
+import { useNavigate } from "react-router-dom";
 
 
 
 const ProductCard = ({ product, onEdit }) => {
+  const navigate = useNavigate();
   const { deleteProduct } = useContext(ProductContext);
   const [isEditing, setIsEditing] = useState(false);
 
   return (
     <>
-      <div
+      <div 
+       onClick={() => navigate(`/product/${product.id}`)}
   className="p-4 rounded-3xl shadow-xl m-2 bg-white/80 backdrop-blur-md
              transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-300"
 >

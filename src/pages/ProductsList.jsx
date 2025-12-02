@@ -14,7 +14,7 @@ import Addbutton from "../components/Button";
 import ViewToggleButton from "../components/Toggle";
 
 
-const ProductPage = () => {
+const ProductsList = () => {
   const { products, view, setView } = useContext(ProductContext);
   const [showForm, setShowForm] = useState(false);
   const [editItem, setEditItem] = useState(null);
@@ -71,4 +71,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default ProductsList;
