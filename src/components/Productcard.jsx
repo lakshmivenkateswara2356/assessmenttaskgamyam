@@ -13,7 +13,7 @@ const ProductCard = ({ product, onEdit }) => {
   return (
     <>
       <div 
-       onClick={() => navigate(`/product/${product.id}`)}
+       
   className="p-4 rounded-3xl shadow-xl m-2 bg-white/80 backdrop-blur-md
              transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-300"
 >

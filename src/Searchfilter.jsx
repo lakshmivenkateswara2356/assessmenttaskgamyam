@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ProductContext } from "../context/Productslist";
+import { ProductContext } from "./context/Productslist";
 
 const SearchInput = () => {
   const { allProducts, setSearch } = useContext(ProductContext);

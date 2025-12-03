@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import SearchInput from "../components/Searchfilter";
+import SearchInput from "../Searchfilter";
 import ProductForm from "../components/Productform";
 import ProductCard from "../components/Productcard";
 import ProductRow from "../components/Productable";

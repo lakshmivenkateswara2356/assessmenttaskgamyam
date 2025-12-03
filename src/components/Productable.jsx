@@ -4,12 +4,13 @@ import EditProductModal from "./Edditdetails";
 
 
 const ProductRow = ({ product }) => {
+ 
   const { deleteProduct } = useContext(ProductContext);
   const [isEditing, setIsEditing] = useState(false);
 
   return (
     <>
-      <tr className="hover:bg-gray-50 transition">
+      <tr  className="hover:bg-gray-50 transition">
         <td className="px-4 py-2 border border-gray-300">{product.name}</td>
         <td className="px-4 py-2 border border-gray-300">{product.category}</td>
         <td className="px-4 py-2 border border-gray-300">{product.price}</td>
