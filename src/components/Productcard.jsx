@@ -18,7 +18,7 @@ const ProductCard = ({ product, onEdit }) => {
              transition-all duration-300 hover:scale-105 hover:shadow-2xl border border-gray-300"
 >
 
-        <div>
+        <div onClick={() => navigate(`/product/${product.id}`)}>
           <h2 className="font-bold text-lg">{product.name}</h2>
           <p className="text-gray-600 text-sm w-[250px]">{product.description}</p>
           <h3 className="font-semibold text-black">₹{product.price}</h3>
